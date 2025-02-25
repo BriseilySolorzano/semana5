@@ -148,29 +148,17 @@ body {
 
 
 .event-box {
-    border: 2px solid #dce6f5;
+    border: 2px solid #000000;
     border-radius: 10px;
-    padding: 20px;
-    margin: 10px 0;
+    padding: 10px;
+    margin: 10 px 0;
     cursor: pointer;
-    background-color: #dce6f5;
+    background-color: #ece3e3;
     transition: transform 0.3s;
+    width: 250px;
+    height: 150px;
 }
 
 .event-box:hover {
     transform: scale(1.05);
-}
-
-button {
-    margin-top: 10px;
-    padding: 5px 10px;
-    border: none;
-    background-color: #dce6f5;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #dce6f5;
 }
