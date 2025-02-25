@@ -53,7 +53,10 @@ document.getElementById("rutas").addEventListener("click", function() {
     this.querySelector("p").textContent = "2R, 90F, 87R";
 });
 
+
 document.getElementById("popup").addEventListener("click", function() {
     // Llevar a otra web
     window.location.href = "https://www.mitur.gob.sv/agenda-de-actividades/";
 });
+
+
