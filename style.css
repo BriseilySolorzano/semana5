@@ -107,7 +107,16 @@ body {
 .card h1 {
     color: #667ffe;
 }
-
+.img-container {
+    margin-bottom: 20px;
+}
+.img-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+.img-container img:hover {
+    transform: scale(1.05);
+}
 /* Footer */
 .footer {
     background: rgba(102, 127, 254, 0.8);
