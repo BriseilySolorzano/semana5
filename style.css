@@ -68,6 +68,7 @@ body {
 .container h1 {
     font-size: 2em;
     margin-bottom: 1rem;
+    color: whitecommit;
 }
 /* COLUMNA PRINCIPAL */
 .col-main {
