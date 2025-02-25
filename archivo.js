@@ -46,3 +46,11 @@ class MiElemento extends HTMLElement {
     }
 }
 customElements.define('mi-elemento', MiElemento);
+
+document.getElementById("transporte").addEventListener("click", function() {
+    this.querySelector("p").textContent = ".....................";
+});
+
+document.getElementById("horarios").addEventListener("mouseover", function() {
+    this.querySelector("p").textContent = ".......";
+});
