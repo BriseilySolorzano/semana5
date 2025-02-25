@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    
 }
 
 body {
@@ -10,6 +11,11 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background: linear-gradient(to bottom, #667ffe95, #a3b8ff);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
 }
 
 /* Navbar */
@@ -73,6 +79,7 @@ body {
     text-align: center;
     padding: 15px;
     font-size: 0.9em;
+    margin-top: auto;
 }
 
 /* Responsive*/
