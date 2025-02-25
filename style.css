@@ -12,6 +12,7 @@ body {
     background: linear-gradient(to bottom, #667ffe95, #a3b8ff);
 }
 
+/* Navbar */
 .navbar {
     background: rgba(102, 127, 254, 0.8);
     color: white;
@@ -43,6 +44,7 @@ body {
     font-size: 0.9em;
 }
 
+/* Contenido Principal */
 .content {
     flex-grow: 1;
     display: flex;
@@ -71,4 +73,28 @@ body {
     text-align: center;
     padding: 15px;
     font-size: 0.9em;
+}
+
+/* Responsive*/
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-container img {
+        margin-bottom: 10px;
+    }
+
+    .title-container h2 {
+        font-size: 1.2em;
+    }
+
+    .title-container p {
+        font-size: 0.8em;
+    }
+
+    .card {
+        max-width: 300px;
+    }
 }
