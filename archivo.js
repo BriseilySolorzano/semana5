@@ -1,4 +1,3 @@
-// Definir la clase del custom element
 class MiElemento extends HTMLElement {
     constructor() {
         super();
@@ -6,10 +5,13 @@ class MiElemento extends HTMLElement {
         const shadow = this.attachShadow({ mode: 'open' });
         const container = document.createElement('div');
         const descripcion = document.createElement('p');
-        descripcion.textContent = "Este es un ejemplo de un custom element en JavaScript. Puedes usarlo para crear tus propios elementos HTML personalizados.";
-        const boton = document.createElement('button');
-        boton.textContent = "Haz clic aquí";
-        boton.addEventListener('click', () => {prompt("Este es un custom element");});
+        descripcion.textContent = "El turismo es una excelente manera de explorar nuevas culturas, conocer personas y descubrir paisajes impresionantes. Planifica tu próximo viaje y vive una experiencia inolvidable.";
+        
+        const boton = document.createElement('a');
+        boton.textContent = "Descubre más";
+        boton.href = "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjkr_a-qd-LAxU6STABHfPnDToQFnoECBcQAQ&url=https%3A%2F%2Fwww.instagram.com%2Fmiturelsalvador%2F%3Flocale%3Did%26hl%3Daf&usg=AOvVaw3cxesUVPATZ6pKJNONbV78&opi=89978449";
+        boton.target = "_blank";
+        boton.classList.add("boton-enlace");
 
         const style = document.createElement('style');
         style.textContent = `
@@ -21,17 +23,17 @@ class MiElemento extends HTMLElement {
                 background-color: #f0f0f0;
                 border-radius: 5px;
             }
-            button {
-                background-color:rgb(76, 106, 175);
+            .boton-enlace {
+                display: inline-block;
+                background-color: rgb(76, 106, 175);
                 color: white;
                 padding: 10px 20px;
-                border: none;
-                cursor: pointer;
-                margin-top: 10px;
+                text-decoration: none;
                 border-radius: 5px;
+                margin-top: 10px;
             }
-            button:hover {
-                background-color:rgb(69, 84, 160);
+            .boton-enlace:hover {
+                background-color: rgb(69, 84, 160);
             }
             p {
                 font-size: 16px;
